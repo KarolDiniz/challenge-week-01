@@ -19,7 +19,7 @@ public class Employee {
 		sb.append(greenText);
 		
         sb.append("----- Employee ----- " + "\n");
-        sb.append("First Name: " + (this.firstName) + "Last Name: " + (this.lastName) + "\n");
+        sb.append("First Name: " + (this.firstName) + " Last Name: " + (this.lastName) + "\n");
         sb.append(salary.toString() + "\n");               
         return sb.toString();
 	}
