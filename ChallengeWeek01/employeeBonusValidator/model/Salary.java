@@ -2,15 +2,46 @@ package model;
 
 public class Salary {
 	
-	float valueSalary;
-	float valueBonus;
+	StringBuilder sb = new StringBuilder();
+	private float valueSalary;
+	private float valueBonus;
+	private float netSalary;
 	
 	public Salary(float valueSalary) {
 		this.valueSalary = valueSalary;
+		this.validateBonus();
 	}
 	
+	@Override
+	public String toString() {
+		String greenText = "\033[0;32m"; 
+		sb.append(greenText);
+		
+        sb.append("Salary: " + valueSalary + "\n");
+        sb.append(this.verifyDescontoOrBonus());
+        sb.append("Net Salary: " + netSalary + "\n");          
+        return sb.toString();
+	}
 	
+	public void validateBonus() {
+		if (valueSalary <= 1000) {
+            valueBonus = (float) (valueSalary * 0.2);
+            netSalary = valueSalary + valueBonus;
+            
+        } else if (valueSalary > 1000 && valueSalary <= 2000) {
+            valueBonus = (float) (valueSalary * 0.1);
+            netSalary = valueSalary - valueBonus;
+        } else {
+            valueBonus = (float) (valueSalary * 0.1);
+            netSalary = valueSalary - valueBonus;
+        }	
+	}
 	
-	
-
+	public String verifyDescontoOrBonus() {
+		if(valueSalary > 2000) {
+			return "Desconto: " + valueBonus + "\n";
+		} else {
+			return "Bonus: " + valueBonus + "\n";
+		}
+	}
 }

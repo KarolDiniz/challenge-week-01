@@ -14,7 +14,14 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", salary=" + salary + "]";
+		StringBuilder sb = new StringBuilder();
+		String greenText = "\033[0;32m"; 
+		sb.append(greenText);
+		
+        sb.append("----- Employee ----- " + "\n");
+        sb.append("First Name: " + (this.firstName) + "Last Name: " + (this.lastName) + "\n");
+        sb.append(salary.toString() + "\n");               
+        return sb.toString();
 	}
 	
 	
