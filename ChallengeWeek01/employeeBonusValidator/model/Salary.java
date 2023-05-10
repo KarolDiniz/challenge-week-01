@@ -11,7 +11,7 @@ public class Salary {
 
 	StringBuilder sb = new StringBuilder();
 	private float valueSalary;
-	private float valueBonus;
+	private float valueBonusOrDesconto;
 	private float netSalary;
 
 	public Salary(float valueSalary) {
@@ -32,15 +32,15 @@ public class Salary {
 	//Retorna o bonus e o salário liquido a partir do salário.
 	public void validateBonus() {
 		if (valueSalary <= 1000) {
-			valueBonus = (float) (valueSalary * 0.2);
-			netSalary = valueSalary + valueBonus;
+			valueBonusOrDesconto = (float) (valueSalary * 0.2);
+			netSalary = valueSalary + valueBonusOrDesconto;
 
 		} else if (valueSalary > 1000 && valueSalary <= 2000) {
-			valueBonus = (float) (valueSalary * 0.1);
-			netSalary = valueSalary - valueBonus;
+			valueBonusOrDesconto = (float) (valueSalary * 0.1);
+			netSalary = valueSalary - valueBonusOrDesconto;
 		} else {
-			valueBonus = (float) (valueSalary * 0.1);
-			netSalary = valueSalary - valueBonus;
+			valueBonusOrDesconto = (float) (valueSalary * 0.1);
+			netSalary = valueSalary - valueBonusOrDesconto;
 		}
 	}
 
@@ -48,9 +48,9 @@ public class Salary {
 	//Retorna para o toString se há ou não um desconto no salário.	 
 	public String verifyDescontoOrBonus() {
 		if (valueSalary > 2000) {
-			return "Desconto: " + valueBonus + "\n";
+			return "Desconto: " + valueBonusOrDesconto + "\n";
 		} else {
-			return "Bonus: " + valueBonus + "\n";
+			return "Bonus: " + valueBonusOrDesconto + "\n";
 		}
 	}
 }
