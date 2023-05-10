@@ -5,17 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7aa6c63-e0be-4b87-9752-00ad4160f0fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/challenge.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChallengeWeek01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengeWeek01.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeBonusValidator/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/employeeBonusValidator/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeBonusValidator/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/employeeBonusValidator/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeBonusValidator/model/Salary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/employeeBonusValidator/model/Salary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeBonusValidator/utilities/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/employeeBonusValidator/utilities/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employeeBonusValidator/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/employeeBonusValidator/view/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -29,8 +37,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "develop",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/carlo/challenge/ChallengeWeek01",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -38,9 +49,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\carlo\challenge\ChallengeWeek01" />
+      <recent name="C:\Users\carlo\challenge\ChallengeWeek01\EmoticonsAnalyze\model" />
+      <recent name="C:\Users\carlo\challenge\ChallengeWeek01\EmoticonsAnalyze" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\carlo\challenge\ChallengeWeek01\employeeBonusValidator" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Employee" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="view.Main" />
+      <option name="MAIN_CLASS_NAME" value="employeeBonusValidator.view.Main" />
       <module name="ChallengeWeek01" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -55,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683727012001</updated>
-      <workItem from="1683727015804" duration="656000" />
+      <workItem from="1683727015804" duration="3523000" />
     </task>
     <servers />
   </component>

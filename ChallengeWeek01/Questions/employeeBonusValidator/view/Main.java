@@ -1,9 +1,9 @@
-package view;
+package employeeBonusValidator.view;
 
 import java.util.Scanner;
 
-import controller.EmployeeController;
-import utilities.Utilities;
+import employeeBonusValidator.controller.EmployeeController;
+import employeeBonusValidator.utilities.Utilities;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package utilities;
+package employeeBonusValidator.utilities;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
