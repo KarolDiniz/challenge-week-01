@@ -1,4 +1,4 @@
-package EmoticonProject.model;
+package emoticonProject.model;
 
 public class Emoticon {
     private String mensagem;

@@ -3,7 +3,7 @@ package employeeBonusValidator.view;
 import java.util.Scanner;
 
 import employeeBonusValidator.controller.EmployeeController;
-import employeeBonusValidator.utilities.Utilities;
+import utilities.Utilities;
 
 public class Main {
 
