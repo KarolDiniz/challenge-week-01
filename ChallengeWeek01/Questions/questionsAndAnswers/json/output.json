@@ -1,14 +1,26 @@
 [
    {
       "enunciado": "Qual é a capital do Brasil?",
-      "resposta": "Brasília"
+      "resposta": "brasilia"
    },
    {
-      "enunciado": "null?",
-      "resposta": "null"
+      "enunciado": "Qual é a quantidade de lados de um heptágono?",
+      "resposta": "7"
+   },
+   {
+      "enunciado": "De quem é a famosa frase “Penso, logo existo”?",
+      "resposta": "descartes"
    },
    {
       "enunciado": "Qual é o planeta mais próximo do Sol?",
-      "resposta": "Mercúrio"
+      "resposta": "mercurio"
+   },
+   {
+      "enunciado": "Quantos minutos a luz do Sol demora para chegar à Terra??",
+      "resposta": "8"
+   },
+   {
+      "enunciado": "Em que período da pré-história o fogo foi descoberto?",
+      "resposta": "paleolitico"
    }
 ]
