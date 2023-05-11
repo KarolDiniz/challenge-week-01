@@ -10,8 +10,8 @@ public class EmployeeController {
 	/*
 	 * Esta classe foi desenvolvida com a finalidade de armazenar, inicializar e
 	 * exibir dados de um Employee, perante uma classe cliente que deseja acessá-
-	 * (que neste caso, é o main). Sendo assim, este employeeBonusValidator.controller realiza uma
-	 * intermediação entre o main e o employeeBonusValidator.EmoticonProject.model, garantindo uma melhor organização e
+	 * (que neste caso, é o main). Sendo assim, este controller realiza uma
+	 * intermediação entre o main e o model, garantindo uma melhor organização e
 	 * separação de responsabilidades em um projeto.
 	 */
 
