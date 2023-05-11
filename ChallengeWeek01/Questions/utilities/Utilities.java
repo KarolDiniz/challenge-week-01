@@ -44,6 +44,7 @@ public class Utilities {
         return value;
     }
 
+    // Lê um arquivo JSON e retorna um JSONArray com os dados requeridos
     public static JSONArray readJson(String caminhoArquivo) {
         try {
             JSONParser parser = new JSONParser();
