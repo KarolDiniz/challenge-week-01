@@ -1,3 +1,4 @@
+
 [
    {
       "enunciado": "Qual é a capital do Brasil?",
@@ -22,5 +23,21 @@
    {
       "enunciado": "Em que período da pré-história o fogo foi descoberto?",
       "resposta": "paleolitico"
+   },
+   {
+      "enunciado": "Qual foi o famoso navio que naufragou em sua viagem inaugural, em 1912?",
+      "resposta": "Titanic"
+   },
+   {
+      "enunciado": "Quantos dentes tem um ser humano adulto?",
+      "resposta": "32"
+   },
+   {
+      "enunciado": "Em que ano o homem pisou na lua?",
+      "resposta": "1969"
+   },
+   {
+      "enunciado": "O que mede o ano-luz?",
+      "resposta": "distancia"
    }
 ]
