@@ -1,0 +1,64 @@
+--------------------Gerando uma database, cujo nome é: Question4-------------------------
+
+CREATE DATABASE "Question4"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Portuguese_Brazil.1252'
+    LC_CTYPE = 'Portuguese_Brazil.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+-------------------------------Gerando a tabela 'Address'-------------------------------
+
+CREATE TABLE Address (
+    address_id SERIAL PRIMARY KEY,
+    zip VARCHAR(10) NOT NULL,
+    street VARCHAR(255) NOT NULL,
+    complement VARCHAR(255),
+    neighborhood VARCHAR(255) NOT NULL,
+    city VARCHAR(255) NOT NULL,
+    adress_state VARCHAR(2) NOT NULL,
+    country VARCHAR(255) NOT NULL
+);
+
+------------------------------Inserindo dados em'Adress'--------------------------------
+
+INSERT INTO Address (zip, street, complement, neighborhood, city, adress_state, country)
+VALUES ('58580000', 'OLGA DINIZ ALMEDA', 'RUA SEM SAÍDA', 'CENTRO', 'SERRA BRANCA', 'PB', 'Brasil');
+
+----------------------------------------------------------------------------------------
+
+INSERT INTO Address (zip, street, complement, neighborhood, city, adress_state, country)
+VALUES ('58590000', 'BOA VISTA', 'PROXIMA AO CATOLÉ', 'SITIO', 'SAO JOAO DO CARIRI', 'PB', 'Brasil');
+
+
+--------------------------------Gerando a tabela 'Person'-------------------------------
+
+CREATE TABLE Person (
+    person_id SERIAL PRIMARY KEY,
+    person_name VARCHAR(255) NOT NULL,
+    age INTEGER NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    height DECIMAL(5,2),
+    email VARCHAR(255),
+    CPF VARCHAR(11) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    id_address INTEGER NOT NULL REFERENCES Address(address_id)
+);
+
+--------------------------------Inserindo dados em 'Person'------------------------------
+
+INSERT INTO Person (person_name, age, phone, height, email, CPF, date_of_birth, id_address)
+VALUES ('Karoline Diniz Ramos', 19, '83986282638', 1.63, 'karolined@gmail.com', '15547885496', '2003-01-27', 1);
+
+-----------------------------------------------------------------------------------------
+
+INSERT INTO Person (person_name, age, phone, height, email, CPF, date_of_birth, id_address)
+VALUES ('Karen Diniz Ramos', 25, '8356474859', 1.70, 'karenndiz@gmail.com', '77788856495', '1999-06-07', 2);
+
+------------------------------------------------------------------------------------------
+
+INSERT INTO Person (person_name, age, phone, height, email, CPF, date_of_birth, id_address)
+VALUES ('Carlos Ryan de Souza', 22, '8345789632', 1.80, 'carlosryan@gmail.com', '15784962458', '2000-08-21', 1);
