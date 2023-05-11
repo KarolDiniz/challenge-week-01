@@ -1,5 +1,9 @@
 package utilities;
 
+import org.json.simple.JSONArray;
+import org.json.simple.parser.JSONParser;
+
+import java.io.FileReader;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -38,6 +42,17 @@ public class Utilities {
         }
         input.nextLine();
         return value;
+    }
+
+    public static JSONArray readJson(String caminhoArquivo) {
+        try {
+            JSONParser parser = new JSONParser();
+            Object obj = parser.parse(new FileReader(caminhoArquivo));
+            return (JSONArray) obj;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
 }
