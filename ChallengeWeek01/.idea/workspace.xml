@@ -7,9 +7,6 @@
     <list default="true" id="a7aa6c63-e0be-4b87-9752-00ad4160f0fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Questions/questionsAndAnswers/json/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/questionsAndAnswers/json/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Questions/questionsAndAnswers/model/Questionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Questions/questionsAndAnswers/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/questionsAndAnswers/view/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Questions/utilities/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/utilities/Utilities.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +76,7 @@
       </method>
     </configuration>
     <configuration name="QuizProject" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="questionsAndAnswers.view.Main" />
+      <option name="MAIN_CLASS_NAME" value="questionsAndAnswers.view.Quiz" />
       <module name="ChallengeWeek01" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,7 +101,8 @@
       <workItem from="1683763308064" duration="1489000" />
       <workItem from="1683764962408" duration="2032000" />
       <workItem from="1683777736081" duration="2676000" />
-      <workItem from="1683806763853" duration="3786000" />
+      <workItem from="1683806763853" duration="4813000" />
+      <workItem from="1683821639952" duration="3646000" />
     </task>
     <servers />
   </component>
