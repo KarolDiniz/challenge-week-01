@@ -1,4 +1,4 @@
-package model;
+package employeeBonusValidator.model;
 
 public class Employee {
 	
