@@ -3,6 +3,11 @@ import java.util.Scanner;
 import emoticonProject.model.Emoticon;
 import utilities.Utilities;
 
+/*
+ * Essa classe é responsável pela execução do programa, realizando assim, a
+ * interação com o usurário via console.
+ */
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -11,6 +16,7 @@ public class Main {
 
         boolean continuar = true;
         while (continuar) {
+            //Invoca um método útil do pacote utilities.
             String mensagem = Utilities.readStringInput(sc, "Insira uma mensagem aqui: ");
             Emoticon emoticon = new Emoticon(mensagem);
             System.out.println(emoticon.toString());

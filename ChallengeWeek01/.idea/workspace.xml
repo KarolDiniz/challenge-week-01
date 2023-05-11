@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a7aa6c63-e0be-4b87-9752-00ad4160f0fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChallengeWeek01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChallengeWeek01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Questions/EmoticonProject/utilities/Utilities.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Questions/EmoticonProject/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/EmoticonProject/view/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Questions/employeeBonusValidator/utilities/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/utilities/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Questions/employeeBonusValidator/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/employeeBonusValidator/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Questions/emoticonProject/model/Emoticon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/emoticonProject/model/Emoticon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Questions/emoticonProject/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/emoticonProject/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Questions/utilities/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/Questions/utilities/Utilities.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +92,7 @@
       <workItem from="1683727015804" duration="8542000" />
       <workItem from="1683753766509" duration="1274000" />
       <workItem from="1683763308064" duration="1489000" />
-      <workItem from="1683764962408" duration="930000" />
+      <workItem from="1683764962408" duration="2032000" />
     </task>
     <servers />
   </component>
