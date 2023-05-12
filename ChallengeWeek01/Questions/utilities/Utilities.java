@@ -43,15 +43,24 @@ public class Utilities {
         input.nextLine();
         return value;
     }
+    //verifica se o campo está apenas vazio
+    public static String readUserResponseNotEmpty(Scanner input) {
+        String value = input.nextLine().toLowerCase().trim();
+        while (value.isEmpty()) {
+            System.out.println("Campo em branco! Insira algo:");
+            value = input.nextLine().toLowerCase().trim();
+        }
+        return value;
+    }
 
     //Valida a resposta em formato de 'continuação'("S" para sim ou "N" para não)
     public static String readContinue(Scanner input) {
-        String resposta = "";
+        String value = "";
         do {
-            resposta = resposta.toUpperCase();
-            resposta = readStringInput(input, "Deseja enviar outra mensagem? (S/N)");
-        } while (!resposta.equals("S") && !resposta.equals("N"));
-        return resposta;
+            value = value.toUpperCase();
+            value = readStringInput(input, "Deseja enviar outra mensagem? (S/N)");
+        } while (!value.equals("S") && !value.equals("N"));
+        return value;
     }
 
     // Lê um arquivo JSON e retorna um JSONArray com os dados requeridos
@@ -65,5 +74,4 @@ public class Utilities {
             return null;
         }
     }
-
 }

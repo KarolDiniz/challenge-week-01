@@ -27,7 +27,7 @@ public class Quiz {
 
         System.out.println("\u001B[36m ---- QUIZ ---- \033[0m");
         System.out.print("Insira seu nome: ");
-        String nomeUser = input.nextLine();
+        String nomeUser = Utilities.readUserResponseNotEmpty(input);
         System.out.println("\nOlá, " + nomeUser + "! Bem-vindo(a) ao quiz.");
         System.out.println("Responda os enunciados a seguir: ");
 
@@ -37,11 +37,8 @@ public class Quiz {
             String enunciado = (String) pergunta.get("enunciado"); //Exibe o enunciado
             System.out.println("\n" + (i + 1) + " - " + enunciado);
 
-            String respostaUser = input.nextLine().toLowerCase();
-            while (respostaUser.isEmpty()) {
-                System.out.println("Campo em branco! Insira algo:");
-                respostaUser = input.nextLine().toLowerCase().trim();
-            }
+            //Tratamento: não deve haver campos em branco
+            String respostaUser = Utilities.readUserResponseNotEmpty(input);
 
             //Recebe a resposta correta e verifica se o user acertou, após isso, incrementa-se aos erros ou acertos
             String respostaEnunciado = (String) pergunta.get("resposta");
@@ -54,7 +51,6 @@ public class Quiz {
                 erros++;
             }
         }
-
         System.out.println("\n" + "\u001B[36m ---- QUIZ FINALIZADO! ---- \033[0m" + "\n");
         System.out.println("NOME: " + nomeUser);
         System.out.println("\u001B[32m" + "ACERTOS: " + "\033[0m" + acertos + "\u001B[31m" + "\nERROS: " + "\033[0m" + erros );
