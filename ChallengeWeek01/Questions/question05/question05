@@ -4,22 +4,63 @@ db.createCollection("Person")
 
 -----------------------------Inserindo UM documento na collection 'Person' ------------------------
 
-db.Person.insertOne({
-  name: "KAROLINE DINIZ RAMOS",
-  age: 19,
-  phone: "8628-2638",
-  height: 1.63,
-  email: "karolined@gmail.com",
-  CPF: "123.456.789-00",
-  dateOfBirth: new Date("2003-05-27"),
-  address: {
-    zipCode: "58580-000",
-    street: "Olga Diniz Almeida",
-    neighborhood: "CENTRO",
-    complement: "RUA SEM SAIDA",
-    city: "SERRA BRANCA",
-    state: "PB",
-    country: "BRA"
+db.Person.insertOne(
+{
+  "name": "KAROLINE DINIZ RAMOS",
+  "age": 19,
+  "phone": "8628-2638",
+  "height": 1.63,
+  "email": "karolined@gmail.com",
+  "CPF": "123.456.789-00",
+  "dateOfBirth": new Date("2003-05-27"),
+  "address": {
+    "zipCode": "58580-000",
+    "street": "Olga Diniz Almeida",
+    "neighborhood": "CENTRO",
+    "complement": "RUA SEM SAIDA",
+    "city": "SERRA BRANCA",
+    "state": "PB",
+    "country": "BRA"
   }
 })
 
+-----------------------------Inserindo MAIS documentos na collection 'Person' ------------------------
+
+db.Person.insertMany([
+  {
+    "name": "KAREN DINIZ RAMOS",
+    "age": 25,
+    "phone": "8565-8745",
+    "height": 1.63,
+    "email": "karendniz@gmail.com",
+    "CPF": "184.456.769-00",
+    "dateOfBirth": new Date("1999-08-07"),
+    "address": {
+      "zipCode": "58570-000",
+      "street": "Olga Diniz Almeida",
+      "neighborhood": "CENTRO",
+      "complement": "RUA SEM SAIDA",
+      "city": "SERRA BRANCA",
+      "state": "PB",
+      "country": "BRA"
+    }
+  },
+  {
+    "name": "CARLOS RYAN",
+    "age": 23,
+    "phone": "8998-2638",
+    "height": 1.80,
+    "email": "karolined@gmail.com",
+    "CPF": "123.456.789-00",
+    "dateOfBirth": new Date("2000-08-21"),
+    "address": {
+      "zipCode": "58560-000",
+      "street": "Boa vista",
+      "neighborhood": "Sitio",
+      "complement": "Proximo ao catole",
+      "city": "Sao joao do cariri",
+      "state": "PB",
+      "country": "BRA"
+    }
+  }
+]);
