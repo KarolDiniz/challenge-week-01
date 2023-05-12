@@ -44,6 +44,15 @@ public class Utilities {
         return value;
     }
 
+    public static String readContinue(Scanner input) {
+        String resposta = "";
+        do {
+            resposta = resposta.toUpperCase();
+            resposta = readStringInput(input,"Deseja enviar outra mensagem? (S/N)");
+        } while (!resposta.equals("S") && !resposta.equals("N"));
+        return resposta;
+    }
+
     // Lê um arquivo JSON e retorna um JSONArray com os dados requeridos
     public static JSONArray readJson(String caminhoArquivo) {
         try {

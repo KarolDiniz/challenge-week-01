@@ -21,8 +21,9 @@ public class Main {
             Emoticon emoticon = new Emoticon(mensagem);
             System.out.println(emoticon.toString());
 
-            String resposta = Utilities.readStringInput(input, "Deseja enviar outra mensagem? (S/N)");
-            if (resposta.equals("N")) {
+            String resposta = Utilities.readContinue(input);
+            if (resposta.equals("N") || resposta.equals("n")) {
+                System.out.println("Encerrado!");
                 continuar = false;
             }
         }
