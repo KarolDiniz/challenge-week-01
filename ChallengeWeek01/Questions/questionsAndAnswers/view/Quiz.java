@@ -47,12 +47,20 @@ public class Quiz {
                 acertos++;
             } else {
                 System.out.print("\u001B[31mResposta incorreta. \033[0m");
-                System.out.print("A resposta correta é: " + "\u001B[32m" + respostaEnunciado + "\033[0m" + "\n");
+                System.out.print("A resposta correta é: " + "\u001B[32m" + respostaEnunciado + "\033[0m" + "\n" + "\n");
                 erros++;
             }
         }
-        System.out.println("\n" + "\u001B[36m ---- QUIZ FINALIZADO! ---- \033[0m" + "\n");
-        System.out.println("NOME: " + nomeUser);
-        System.out.println("\u001B[32m" + "ACERTOS: " + "\033[0m" + acertos + "\u001B[31m" + "\nERROS: " + "\033[0m" + erros );
+        StringBuilder tabela = new StringBuilder();
+        tabela.append("+-----------------+\n");
+        tabela.append("\u001B[36m| QUIZ FINALIZADO \033[0m\n");
+        tabela.append("+-----------------+\n");
+        tabela.append("| NOME: ").append(nomeUser);
+        tabela.append("\n+-----------------+\n");
+        tabela.append("\u001B[32m| ACERTOS: \033[0m").append(acertos);
+        tabela.append("\n\u001B[31m| ERROS: \033[0m").append(erros);
+        tabela.append("\n+-----------------+\n");
+
+        System.out.println(tabela.toString());
     }
 }
