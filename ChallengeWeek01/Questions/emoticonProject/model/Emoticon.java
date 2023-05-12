@@ -17,11 +17,8 @@ public class Emoticon {
     private void counterEmoticons() {
         for (int i = 0; i < mensagem.length() - 1; i++) {
             if (mensagem.charAt(i) == ':' && mensagem.charAt(i + 1) == '-') {
-                if (i + 2 < mensagem.length() && mensagem.charAt(i + 2) == ')') {
-                    divertidos++;
-
-                } else if (i + 2 < mensagem.length() && mensagem.charAt(i + 2) == '(') {
-                    chateados++;
+                if (i + 2 < mensagem.length() && mensagem.charAt(i + 2) == ')') { divertidos++;
+                } else if (i + 2 < mensagem.length() && mensagem.charAt(i + 2) == '(') { chateados++;
                 }
             }
         }
@@ -34,13 +31,9 @@ public class Emoticon {
 
     //Responsável por retornar um sentimento de acordo com a quantidade de emoticons
     private String getSentimento() {
-        if (divertidos > chateados) {
-            return "diversão";
-        } else if (divertidos == chateados) {
-            return "neutro";
-        } else {
-            return "chateado";
-        }
+        return (divertidos > chateados) ? "diversão"
+                : (divertidos == chateados) ? "neutro"
+                : "chateado";
     }
 }
 
