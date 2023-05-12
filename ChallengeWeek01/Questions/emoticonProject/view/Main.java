@@ -21,8 +21,9 @@ public class Main {
             Emoticon emoticon = new Emoticon(mensagem);
             System.out.println(emoticon.toString());
 
-            String resposta = Utilities.readContinue(input);
-            if (resposta.equals("N") || resposta.equals("n")) {
+            String resposta;
+            resposta = Utilities.readContinue(input).toLowerCase();
+            if (resposta.equals("n")) {
                 System.out.println("Encerrado!");
                 continuar = false;
             }

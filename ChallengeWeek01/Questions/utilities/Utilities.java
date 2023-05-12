@@ -57,9 +57,9 @@ public class Utilities {
     public static String readContinue(Scanner input) {
         String value = "";
         do {
-            value = value.toUpperCase();
+            value = value.toLowerCase();
             value = readStringInput(input, "Deseja enviar outra mensagem? (S/N)");
-        } while (!value.equals("S") && !value.equals("N"));
+        } while (!value.equals("s") && !value.equals("n"));
         return value;
     }
 
