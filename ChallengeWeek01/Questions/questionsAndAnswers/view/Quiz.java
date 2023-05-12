@@ -11,7 +11,7 @@ import java.util.Scanner;
  * e respostas, assim, ele solicita o nome do usuário, exibe as perguntas e
  * espera que o usuário digite a resposta, após isso ele as valida e retorna
  * um resultado.
- * 
+ *
  * Armazena em um <JSONARRAY>, que estende o pacote ArrayList e implementa List
 
  * Link .jar JSON: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/json-simple/json-simple-1.1.1.jar
@@ -35,12 +35,12 @@ public class Quiz {
         for (int i = 0; i < size; i++) {
             pergunta = (JSONObject) perguntas.get(i);
             String enunciado = (String) pergunta.get("enunciado"); //Exibe o enunciado
-            System.out.println("\n" + (i + 1) + ") " + enunciado);
+            System.out.println("\n" + (i + 1) + " - " + enunciado);
 
             String respostaUser = input.nextLine().toLowerCase();
             while (respostaUser.isEmpty()) {
                 System.out.println("Campo em branco! Insira algo:");
-                respostaUser = input.nextLine().toLowerCase();
+                respostaUser = input.nextLine().toLowerCase().trim();
             }
 
             //Recebe a resposta correta e verifica se o user acertou, após isso, incrementa-se aos erros ou acertos
@@ -57,9 +57,6 @@ public class Quiz {
 
         System.out.println("\n" + "\u001B[36m ---- QUIZ FINALIZADO! ---- \033[0m" + "\n");
         System.out.println("NOME: " + nomeUser);
-        System.out.println("ACERTOS: " + acertos + "\nERROS: " + erros);
+        System.out.println("\u001B[32m" + "ACERTOS: " + "\033[0m" + acertos + "\u001B[31m" + "\nERROS: " + "\033[0m" + erros );
     }
 }
-
-
-
