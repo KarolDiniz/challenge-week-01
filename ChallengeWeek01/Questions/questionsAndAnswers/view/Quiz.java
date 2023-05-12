@@ -25,7 +25,7 @@ public class Quiz {
         JSONArray perguntas = Utilities.readJson(JSON_FILE_);
         int size = perguntas.size();
 
-        System.out.println("\u001B[36m ---- QUIZ ---- \033[0m");
+        System.out.println("\u001B[36m ------ QUIZ ------ \033[0m");
         System.out.print("Insira seu nome: ");
         String nomeUser = Utilities.readUserResponseNotEmpty(input);
         System.out.println("\nOlá, " + nomeUser + "! Bem-vindo(a) ao quiz.");
@@ -51,9 +51,12 @@ public class Quiz {
                 erros++;
             }
         }
+
+        System.out.println("\n" + "\u001B[35m ---- QUIZ FINALIZADO! ---- \033[0m" + "\n");
+
         StringBuilder tabela = new StringBuilder();
         tabela.append("+-----------------+\n");
-        tabela.append("\u001B[36m| QUIZ FINALIZADO \033[0m\n");
+        tabela.append("\u001B[36m| RESULTADOS \033[0m\n");
         tabela.append("+-----------------+\n");
         tabela.append("| NOME: ").append(nomeUser);
         tabela.append("\n+-----------------+\n");
