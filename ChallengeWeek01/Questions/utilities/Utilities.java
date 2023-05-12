@@ -44,11 +44,12 @@ public class Utilities {
         return value;
     }
 
+    //Valida a resposta em formato de 'continuação'("S" para sim ou "N" para não)
     public static String readContinue(Scanner input) {
         String resposta = "";
         do {
             resposta = resposta.toUpperCase();
-            resposta = readStringInput(input,"Deseja enviar outra mensagem? (S/N)");
+            resposta = readStringInput(input, "Deseja enviar outra mensagem? (S/N)");
         } while (!resposta.equals("S") && !resposta.equals("N"));
         return resposta;
     }

@@ -11,15 +11,20 @@ import java.util.Scanner;
  * e respostas, assim, ele solicita o nome do usuário, exibe as perguntas e
  * espera que o usuário digite a resposta, após isso ele as valida e retorna
  * um resultado.
+ * 
+ * Armazena em um <JSONARRAY>, que estende o pacote ArrayList e implementa List
+
  * Link .jar JSON: https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/json-simple/json-simple-1.1.1.jar
  * */
 public class Quiz {
+    private static final String JSON_FILE_ = "C:\\Users\\carlo\\challenge\\ChallengeWeek01\\Questions\\questionsAndAnswers\\json\\output.json";
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int acertos = 0, erros = 0;
-        double notaFinal;
-        JSONArray perguntas = Utilities.readJson("C:\\Users\\carlo\\challenge\\ChallengeWeek01\\Questions\\questionsAndAnswers\\json\\output.json");
+        JSONArray perguntas = Utilities.readJson(JSON_FILE_);
         int size = perguntas.size();
+
         System.out.println("\u001B[36m ---- QUIZ ---- \033[0m");
         System.out.print("Insira seu nome: ");
         String nomeUser = input.nextLine();
